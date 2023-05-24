@@ -1,0 +1,101 @@
+@import url("./normalize.css");
+
+/* Fonts */
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.ttf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-BlackItalic.ttf");
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Colors */
+
+.primary {
+	color: #8780E0;
+}
+
+.action {
+	color: #251C98;
+}
+
+/* Text */
+
+.title {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	line-height: 2rem;
+}
+
+.subtitle {
+	font-family: "Lato", sans-serif;
+	font-weight: normal;
+	text-align: right;
+}
+
+.footer-text {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	text-align: right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* Containers */
+
+html, body {
+	height: 100%;
+}
+
+.title-wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-container {
+	max-width: 800px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+}
+
+/* Other */
+
+.footer-icon {
+	width: 48px;
+	height: 48px;
+	margin-left: 16px;
+}
+
+
+@media screen and (max-width: 480px) {
+	.footer-icon {
+		width: 32px;
+		height: 32px;
+	}
+}
