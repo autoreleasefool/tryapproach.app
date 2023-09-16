@@ -45,6 +45,10 @@
 	text-align: right;
 }
 
+p {
+	font-family: "Lato", sans-serif;
+}
+
 .footer-text {
 	font-family: "Lato", sans-serif;
 	font-weight: 900;
@@ -70,6 +74,8 @@ html, body {
 
 .title-container {
 	max-width: 800px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .footer {
