@@ -45,6 +45,15 @@
 	text-align: right;
 }
 
+.link {
+	text-align: right;
+}
+
+.link a {
+	text-decoration: none;
+	color:#8780E0;
+}
+
 p {
 	font-family: "Lato", sans-serif;
 }
@@ -65,14 +74,14 @@ html, body {
 	height: 100%;
 }
 
-.title-wrapper {
+.content-wrapper {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.title-container {
+.content-container {
 	max-width: 800px;
 	padding-left: 16px;
 	padding-right: 16px;
