@@ -87,6 +87,12 @@ html, body {
 	padding-right: 16px;
 }
 
+.app-stores {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -105,6 +111,10 @@ html, body {
 	width: 48px;
 	height: 48px;
 	margin-left: 16px;
+}
+
+.app-stores .image {
+	height: 44px;
 }
 
 
