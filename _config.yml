@@ -1,0 +1,10 @@
+# Site settings
+title: Approach, the 5 Pin Bowling Companion
+email: approach@josephroque.ca
+description: >- # this means to ignore newlines until "baseurl:"
+  Try Approach, the 5 Pin Bowling Companion for iOS and Android
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tryapproach.app" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
