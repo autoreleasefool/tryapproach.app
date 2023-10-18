@@ -23,15 +23,41 @@
 
 /* Colors */
 
+:root {
+	--primary: #8780E0;
+	--secondary: #FF9DEF;
+	--action: #251C98;
+	--background: #fff;
+	--text: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #FF9DEF;
+		--secondary: #FFD34C;
+		--action: #8780E0;
+		--background: #000;
+		--text: #fff;
+	}
+}
+
 .primary {
-	color: #8780E0;
+	color: var(--primary);
+}
+
+.secondary {
+	color: var(--secondary);
 }
 
 .action {
-	color: #251C98;
+	color: var(--action);
 }
 
 /* Text */
+
+h1, h2, h3, p {
+	color: var(--text);
+}
 
 .title {
 	font-family: "Lato", sans-serif;
@@ -45,13 +71,8 @@
 	text-align: right;
 }
 
-.link {
-	text-align: right;
-}
-
-.link a {
-	text-decoration: none;
-	color:#8780E0;
+a, .link, .link:visited {
+	color: var(--action);
 }
 
 p {
@@ -68,10 +89,20 @@ p {
 	font-style: italic;
 }
 
+.text-align-right {
+	text-align: right;
+}
+
 /* Containers */
 
 html, body {
 	height: 100%;
+	background-color: var(--background);
+}
+
+.content {
+	height: 100%;
+	position: relative;
 }
 
 .content-wrapper {
@@ -79,9 +110,11 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 116px;
 }
 
 .content-container {
+	max-height: 100%;
 	max-width: 800px;
 	padding-left: 16px;
 	padding-right: 16px;
@@ -94,7 +127,7 @@ html, body {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -102,6 +135,8 @@ html, body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--background);
+	max-height: 100px;
 	padding: 16px;
 }
 
